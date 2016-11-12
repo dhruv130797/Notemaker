@@ -1,5 +1,9 @@
+
 node_modules
 dist
 .tmp
 bower_components
 .sass-cache
+.sass-cache/
+*.css.map
+
