@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans|Titillium+Web:600|Cabin);
+@import "grid";
+
+/* @import "include/reset"; */
+
+html,
+body {
+    margin: 0;
+    margin-top: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+header {
+    background-image: url(/images/Undo.jpg);
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(80%) contrast(70%);
+}
+
+header h2 {
+    margin: 0;
+    text-align: center;
+}
+
+header h3 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-kerning: auto;
+    font-size: 140%;
+    color: #ffffff;
+}
+
+nav {
+    background-color: #E64A19;
+    padding: 1px 0;
+    align-items: baseline;
+    box-shadow: 0px 6px 26px 2px #949494;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 106%;
+    translation: all 0.1s ease-out;
+    margin-right: 4px;
+    align-content: center;
+    margin-bottom: 0px;
+    &:hover {
+        border-bottom: 2px;
+        border-bottom-color: aliceblue;
+    }
+}
+
+nav a.opt-selected {
+    font-style: italic;
+}
+
+li {
+    display: inline-block;
+}
+
+header h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-kerning: auto;
+    font-size: 310%;
+    color: #ffffff;
+    transition: all 0.2s ease-out;
+    &:hover {
+        font-size: 370%;
+        color: antiquewhite;
+        transform: translateX(0px)
+    }
+}
+
+.container {
+    margin: 0px 0px;
+    height: 300px;
+    margin-top: 0px;
+    /*    margin-bottom: 100px; */
+    position: relative;
+    background-color: white;
+    z-index: 3;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 40px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: -3;
+}
+
+footer .footer-stuff {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+footer a {
+    color: #998;
+    padding-left: 20px;
+}
+
+footer input {
+    color: #666;
+}
+
+div#plxUser {
+    height: 30vh;
+    background-color: white;
+    margin-bottom: 400px;
+}

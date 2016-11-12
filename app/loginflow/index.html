@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>NoteMaker Login</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- bstyles/css -->
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/signup.css">
+    <!-- endbuild -->
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/loginflow/register.html">Register</a></li>
+            <li><a href="">Download</a></li>
+            <li><a href="">Fork Project</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li class="opt-selected"><a href="/loginflow/">Login</a></li>
+        </ul>
+    </nav>
+    <div class="signup">
+        <div class="signup-card">
+            <div class="card signup">
+                <div class="wrapper">
+                    <div class="banner">
+                        <p>Login</p>
+                    </div>
+                    <div class="error_view hidden"></div>
+                    <div class="spacer"></div>
+                    <form autocomplete="on" method="post" action="/app/public/start.php">
+                        <div clas="dataget">
+                            <div class="group">
+                                <input type="email" name="umail" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Email Address</label>
+                            </div>
+                            <div class="group">
+                                <input type="password" name="upass" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Password</label>
+                            </div>
+                        </div>
+                        <input type="submit" name="login" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

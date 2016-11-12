@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Register for NoteMaker</title>
+    <meta name="description" content="register for a brand new account for Notemaker">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- bstyles/css -->
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/signup.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li  class="opt-selected"><a href="/loginflow/register.html">Register</a></li>
+            <li><a href="">Download</a></li>
+            <li><a href="">Fork Project</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/loginflow/">Login</a></li>
+        </ul>
+    </nav>
+    <div class="signup">
+        <div class="signup-card">
+            <div class="card signup">
+                <div class="wrapper">
+                   <div class="banner"><p>Register</p></div>
+                   <br />
+                    <div class="error_view hidden"></div>
+                    <form autocomplete="on" method="GET" action="/app/public/start.php">
+                        <div class="dataget">    
+                            <div class="group">      
+                                <input type="text"  name="uname" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Name</label>
+                            </div>
+                            <div class="group">      
+                                <input type="email"  name="umail" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Email</label>
+                            </div>
+                            <div class="group">      
+                                <input type="password"  name="upass" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Password</label>
+                            </div>
+                            <div class="group">      
+                                <input type="date"  name="udate" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Date of Birth</label>
+                            </div>
+                            <div class="group">      
+                                <input type="password"  name="upasschk" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Retype Password</label>
+                            </div>
+                        </div>
+                        <input type="submit" name="signup" />
+                    </form>
+                </div>        
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
