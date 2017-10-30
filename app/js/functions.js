@@ -22,7 +22,7 @@ $(window).scroll(function(){
 
 
   // Landing Elements
-  if(wScroll > $('.clothes-pics').offset().top - ($(window).height() / 1.2)) {
+  if(wScroll > $('.clothes-pics').offset().top - ($(window).height() / 1.3)) {
 
     $('.clothes-pics figure').each(function(i){
 
